@@ -17,47 +17,6 @@
   color: #10191e;
 }
 
-.menu {
-  display: flex;
-  justify-content: center;
-  min-height: 75px;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1330px;
-  min-width: 1280px;
-  margin: 40px auto;
-}
-
-.menu__link {
-  font-size: 18px;
-  margin-right: 20px;
-  text-decoration: none;
-  color: #10191e;
-}
-
-.content {
-  max-width: 1330px;
-  min-width: 1280px;
-  margin: auto;
-}
-
-.flex-row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.flex-row_reversed {
-  flex-direction: row-reverse;
-  margin: 60px auto;
-}
-
 .project {
   background-position: center;
   background-size: cover;
@@ -71,8 +30,21 @@
 .project_music-album {
   background-image: url(https://code.s3.yandex.net/web-code/album.png);
 }
+
 .project_design-principles {
   background-image: url(https://code.s3.yandex.net/web-code/design.png);
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .flex-column {
@@ -82,16 +54,16 @@
   justify-content: space-between;
 }
 
+.flex-column_reversed {
+  flex-direction: column-reverse;
+}
+
 .project_procrastinate {
   width: 636px;
   height: 557px;
 }
 
-.flex-column_reversed {
-  flex-direction: column-reverse;
-}
-
-.project-video {
+.project__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -101,23 +73,38 @@
   width: 636px;
   height: 240px;
 }
+
 .flex-row_frameworks-inner {
   width: 636px;
   height: 290px;
 }
 
-.project_slider,
-.project_reactive {
+.project_slider {
   width: 306px;
   height: 290px;
-}
-
-.project_slider {
   background-image: url(https://code.s3.yandex.net/web-code/slider.gif);
 }
 
 .project_reactive {
+  width: 306px;
+  height: 290px;
   background-image: url(https://code.s3.yandex.net/web-code/reactive.gif);
+}
+
+.flex-row_reversed {
+  flex-direction: row-reverse;
+  margin: 60px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  min-height: 75px;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: 40px auto;
 }
 
 .project_vanilla {
@@ -142,8 +129,8 @@
 }
 
 .footer {
-  display: flex;
   height: 95px;
+  display: flex;
   justify-content: center;
   max-width: 1330px;
   min-width: 1280px;
@@ -153,9 +140,22 @@
 .footer__logo {
   width: 145px;
   height: 25px;
-  background-image: url(https://code.s3.yandex.net/web-code/RU-long-black.svg);
+  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   align-self: center;
+}
+
+.content {
+  max-width: 1330px;
+  min-width: 1280px;
+  margin: auto;
+}
+
+.menu__link {
+  font-size: 18px;
+  text-decoration: none;
+  color: #10191e;
+  margin-right: 20px;
 }
